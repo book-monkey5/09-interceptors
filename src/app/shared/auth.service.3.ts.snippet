@@ -1,0 +1,12 @@
+// ...
+@Injectable({ /* ... */ })
+export class AuthService {
+  // ...
+  /*BS*/login() {
+    this._isAuthenticated$.next(true);
+  }
+
+  logout() {
+    this._isAuthenticated$.next(false);
+  }/*BE*/
+}

@@ -1,0 +1,8 @@
+// ...
+/*BS*/import { BehaviorSubject } from 'rxjs';/*BE*/
+
+@Injectable({ /* ... */ })
+export class AuthService {
+  /*BS*/private _isAuthenticated$ = new BehaviorSubject(true);
+  readonly isAuthenticated$ = this._isAuthenticated$.asObservable();/*BE*/
+}

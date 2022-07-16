@@ -1,0 +1,7 @@
+// ...
+/*BS*/import { AuthService } from './shared/auth.service';/*BE*/
+
+@Component({ /* ... */ })
+export class AppComponent {
+  constructor(/*BS*/public auth: AuthService/*BE*/) {}
+}
