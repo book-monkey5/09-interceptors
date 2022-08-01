@@ -1,6 +1,6 @@
 <nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/books" routerLinkActive="active">Books</a>
+  <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+  <a routerLink="/books" routerLinkActive="active" ariaCurrentWhenActive="page">Books</a>
   <!--BS--><button class="green"
     (click)="auth.login()"
     *ngIf="!auth.isAuthenticated">Login</button>
@@ -9,4 +9,6 @@
     *ngIf="auth.isAuthenticated">Logout</button><!--BE-->
 </nav>
 
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>
