@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { AuthInterceptor } from './shared/auth.interceptor';
 
-
 @NgModule({
   declarations: [
     AppComponent,
